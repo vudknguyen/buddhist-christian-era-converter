@@ -1,0 +1,28 @@
+{
+  "name": "buddhist-christian-era-converter",
+  "version": "0.1.1",
+  "description": "Buddhist - Christian Era converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vudknguyen/buddhist-christian-era-converter.git"
+  },
+  "keywords": [
+    "buddhist",
+    "christian",
+    "era",
+    "converter"
+  ],
+  "author": "Vu Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vudknguyen/buddhist-christian-era-converter/issues"
+  },
+  "homepage": "https://github.com/vudknguyen/buddhist-christian-era-converter#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
