@@ -4,7 +4,7 @@ const BUDDHIST_TO_CHRISTIAN_ADJUSTMENT = 544;
 /**
  * Convert from Buddhist year to Christian year
  * If the value lower than 0 mean Before Christian Year
- * @param {Number} buddhistYear 
+ * @param {Number} buddhistYear
  * @returns {Number} christianYear
  */
 function toChristianYear(buddhistYear) {
@@ -15,7 +15,7 @@ function toChristianYear(buddhistYear) {
 /**
  * Convert from Christian year to Buddhist year
  * If the value lower than 0 mean Before Buddhist Year
- * @param {Number} christianYear 
+ * @param {Number} christianYear
  * @returns {Number} buddhistYear
  */
 function toBuddhistYear(christianYear) {

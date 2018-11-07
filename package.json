@@ -1,10 +1,13 @@
 {
   "name": "buddhist-christian-era-converter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Buddhist - Christian Era converter",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha ./"
+    "test": "node_modules/.bin/mocha --compilers js:babel-core/register ./",
+    "prebuild": "rimraf ./dist/",
+    "build": "./node_modules/.bin/babel index.js --out-dir dist --copy-files",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,10 @@
   },
   "homepage": "https://github.com/vudknguyen/buddhist-christian-era-converter#readme",
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "*",
+    "rimraf": "^2.5.4"
   }
 }
